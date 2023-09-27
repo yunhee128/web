@@ -1,0 +1,46 @@
+ul{list-style: none;}
+a:link , a:visited{color: #ffffff;text-decoration: none;}
+#myMenu{
+    position: fixed;
+    z-index: 10;
+    left:0;
+    top:0;
+    background-color: rgb(255, 255, 255 opacity);
+    width: 100%;
+    height: 40px;
+}
+
+#myMenu li{
+    width: 150px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+}
+
+#fullpage .section:nth-child(1){background:url(./배경_완1.jpg) no-repeat top/cover;
+    box-sizing: border-box;
+    padding-top: 60px;
+}
+#fullpage .section:nth-child(2){background:url(./프로필_완1.jpg) no-repeat top/cover;}
+#fullpage .section:nth-child(3) video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    object-fit: cover;
+}
+#fullpage .section:nth-child(4) video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    object-fit: cover;
+}
+#fullpage .section:nth-child(5) video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    object-fit: cover;
+}
+#fullpage .section:nth-child(6){background-color: rgb(2, 44, 14);}

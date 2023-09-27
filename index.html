@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="fullpage.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script>
+        $(document).ready(function() {
+	       $('#fullpage').fullpage({
+	        	//options here
+	        	autoScrolling:true,
+	        	scrollHorizontally: true,
+                anchors: ['1Page', '2Page', '3Page', '4Page', '5page', '6page'],
+ 	            menu: '#myMenu',
+                navigation: true,
+	            navigationPosition: 'right',
+	        });
+});
+    </script>
+</head>
+<body>
+    <ul id="myMenu">
+        <li data-menuanchor="1Page"><a href="#1Page">Intro</a></li>
+        <li data-menuanchor="2Page"><a href="#2Page">Profile</a></li>
+        <li data-menuanchor="3Page"><a href="#3Page">Video works A</a></li>
+        <li data-menuanchor="4Page"><a href="#4Page">Video works B</a></li>
+        <li data-menuanchor="5page"><a href="#5page">Video works C</a></li>
+        <li data-menuanchor="5page"><a href="#6page">End</a></li>
+    </ul>
+
+    <div id="fullpage">
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section">
+            <video src="flowers.mp4" loop muted controls></video>
+        </div>
+        <div class="section">
+            <video src="flowers.mp4" loop muted controls></video>
+        </div>
+        <div class="section">
+            <video src="flowers.mp4" loop muted controls></video>
+        </div>
+        <div class="section"></div>
+    </div>
+</body>
+</html>
